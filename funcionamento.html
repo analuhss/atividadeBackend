@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Funcinamento</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>FUNCIONAMENTO DO BACK-END</h1>
+    
+        <section class="card">
+            <h3>Cliente/Servidor</h3>
+
+            <p>A estrutura de cliente e servidor é um modelo de interação no qual um programa envia uma solicitação para outro programa e aguarda uma resposta. O programa solicitante é chamado de cliente e o que responde é chamado de servidor.</p>
+        </section>
+
+        <section class="card">
+            <h3>Requisição e Resposta</h3>
+
+            <p>A estrutura de cliente/servidor se comunica com mensagens que podem ser entendidas por humanos. Estas mensagens são chamadas de requisições ou respostas, tendo cada uma delas um formato.</p>
+            <section class="card2">
+                <h4>Requsição</h4>
+                <p>A primeira linha de uma requisição contém três elementos:
+                <p><span>GET / HTTP/1.1</span></p>
+                </p>
+                <p> GET significa o método HTTP utilizado.
+                    
+                    <p>Ele diz que ação o cliente espera que seja executada pelo servidor. Neste caso, que ele lhe <span>traga </span>algo.</p>
+                <p>Após o GET, veem o caminho para qual o recurso que estamos buscando no servidor. Por exemplo, se desejamos acessar a página de contatos de um site, esse caminho seria contatos.html.
+                Logo após o caminho temos a versão do protocolo HTTP utilizada. nesse caso, a versão utilizada é a 1.1, a mais comum atualmente.
+                Uma requisição também pode conter cabeçalhos, que apresentam informações adicionais.
+                </p>
+
+                <p><span>Host: devmedia.com.br User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36…
+                </span></p>
+                <p>Dependendo do método HTTP utilizado, a requisição também pode ter um corpo. O corpo de uma mensagem nos permite enviar dados para o servidor. quando usamos o método GET, por exemplo, a mensagem não necessita de um corpo, pois os dados já estão contidos na URL. Já no POST, dizemos que os dados preenchidos em um formulário são passados por um corpo da requisição.
+                </p>
+            </section>
+            <section>
+                <h4>Resposta</h4>
+
+                <p>Uma resposta possui a seguinte estrutura: 
+                    <p>HTTP/1.1 200 OK Cache-Control: no-cache, must-revalidate Content-Type: text/html; charset=ISO-8859-1 …</p>
+                    A primeira informação que identificamos na linha 1 contém a versão do protocolo HTTP utilizado. Após isso,vemos o código de retorno e seu significado. 200 significa que a requisição foi recebida e processada pelo servidor com sucesso. 
+                    Temos abaixo desta linha os headers da resposta, a exemplo Cache-Control e Content-Type. A resposta também pode conter um corpo com o recurso acessado no servidor.
+                    </p>
+            </section>
+        </section>
+
+        <section class="card">
+            <h3>HTTP e HTTPS</h3>
+            <p>O protocolo de transferência de hipertexto (HTTP) utiliza o modelo de comunicação cliente/servidor. Ele é um protocolo de aplixação no modelo de comunicação de rede Opens Systems Interconnection (OSI). Ele define vários tipos de solicitações e respostas.
+            Da mesma forma que o servidor envia diferentes tipos de protocolo HTTP na forma de códigos numéricos e dados.
+            </p>
+            <section>
+                200 - OK
+                400 - Solicitação inválida
+                404 - Recurso não encontrado
+            </section>
+            <p>Essa comunicação de solicitação/resposta geralmente é invisível para os usuários. è um método de comunicação que o navegador e os servidores usam, então o WWW (World WIde Web) funciona de forma consistente para todo
+                No entanto, o protocolo HTTP não criptografa as informações que ele transmite, permitindo que as informações sejam lidas por terceiros. Este não era o processo ideal, então foi estendido para HTTPS, que combina as solicitações respostas com a tecnologia SSL e TLS
+            Os sites HTTPS devem obter um certificado SSL/TLS de uma autoridade de certificação (CA) independente Esses sites compartilham o certificado com o navegador antes de trocar dados para estabelecer confiança. O certificado SSL também contém informações criptográficas, para que o servidor e os navegadores da Web possam trocar dados criptografados ou codificados.
+            </p>
+            <ol>
+                <li>O navegador tenta verificar a autenticidade do site solicitando o certificado SSL do servidor
+                </li>
+                
+                <li>O servidor envia o certificado SSL que contém uma chave pública de resposta.
+                </li>
+
+                <li>O certificado SSL do site comprova a identidade do servidor. Quando o navegador estiver satisfeito, ele usará a chave pública para criptografar e enviar uma mensagem que contém uma chave para uma sessão secreta.
+                </li>
+                
+                <li>O servidor Web usa sya chave privada para descriptografar a mensagem e recuperar a chave da sessão. Em seguida, ele criptografa a chave da sessão e envia uma mensagem de confirmação ao navegador.
+                </li>
+
+                <li>Após este processo, o navegador e o servidor Web mudam para usar a mesma chave de sessão para trocar mensagens com segurança.</li>
+            </ol>
+        </section>
+    
+    </main>
+    
+</body>
+</html>

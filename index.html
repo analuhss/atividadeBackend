@@ -7,74 +7,113 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body>
+<body id="topo">
     <header>
         <h1>BACK-END</h1>
         <P>Ana Luiza Santos Guimarães</P>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Front-end e Back-end</a></li>
+                <li><a href="./funcionamento.html">Funcionamento</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <h2>Front-end e Back-End</h2>
 
         <p>Antes de entender o que é um backend, também é importante entender outro conceito do desenvolvimento de sistemas, isso pois são conceitos que ainda distindos andam juntos.</p>
 
-        <h3>Front-End</h3>
+        <section class="card">
 
-        <p>Basicamente, o Front-End é a interface gráfica do projeto. Ou seja, onde se desenvolve a aplicação o qual o usuário pode interagir diretamente, seja em sites, aplicativos ou softwares.</p>
-        <h3>Back-End</h3>
+            <h3>Front-End</h3>
+    
+            <p>Basicamente, o Front-End é a interface gráfica do projeto. Ou seja, onde se desenvolve a aplicação o qual o usuário pode interagir diretamente, seja em sites, aplicativos ou softwares.</p>
 
+        </section>
+
+        <section class="card">
+            <h3>Back-End</h3>
+    
+            <p>O Back-End é onde o código acontece de forma mais lógica e complexa, como por exemplo, onde os dados do usuário devem ser usados e armazenados. Resumidamente é a parte no qual o usuário não consegue interagir.</p>
+        </section>
+
+        <section class="card">
+            <h3>Qual a diferença entre os dois?</h3>
+    
+            <p>
+                A diferença fica muito clara só de saber o significado entre os dois termos, mas, sintetizando, a front é onde o usuário v~e e interage, e o back é onde a parte lógica do sistema acontece.
+            </p>
+        </section>
+
+        <section class="card">
+            <h3>Qual a responsabilidade de cada um deles?</h3>
+    
+            <p>
+                A responsabilidade do Front-End é apresentar uma interface gráfica no qual o usuário consiga interagir para concluir qual que seja o objetivo dele no sistema, portanto deve ser uma estrutura intuitiva e bem pensada, pois de nada adianta ter um front-end esteticamente lindo, mas que atrapalhe a utilização do usuário.
+                Por outro lado, o back-end se responsabiliza por assegurar que a comunicação entre o usuário e o sistema seja feita de forma lógica e que funcione.
+            </p>
+        </section>
+
+        <section class="card">
+            <h3>Qual a responsabilidade de cada um deles?</h3>
+    
+            <p>
+                A responsabilidade do Front-End é apresentar uma interface gráfica no qual o usuário consiga interagir para concluir qual que seja o objetivo dele no sistema, portanto deve ser uma estrutura intuitiva e bem pensada, pois de nada adianta ter um front-end esteticamente lindo, mas que atrapalhe a utilização do usuário.
+                Por outro lado, o back-end se responsabiliza por assegurar que a comunicação entre o usuário e o sistema seja feita de forma lógica e que funcione.
+            </p>
+        </section>
+
+        <section class="card">
+            <h3>Como eles se comunicam?</h3>
+            <p>	A integração entre o front e o back é feita através de uma API. Uma API (Application Programming Interface), é a ponte que permite que essas duas partes se comuniquem.
+            Em aplicações web, é usado o API REST que tem como base da comunicação o protocolo HTTP.
+            O cliente, utilizando o front-end, envia uma requisição através do protocolo HTTP  para o servidor (back-end), e essas ações podem ser: adicionar, ler, excluir ou atualizar dados. este tipo de arquitetura é chamada de cliente servidor.
+            Por exemplo quando o usuário interage clicando em um botão, o front envia uma requisição para o back-end, por sua vez o back-end processa essa requisição, realiza as operações necessárias, como consulta nos dados, e por fim, envia uma resposta para o front-end.
+        </p>
+        </section>
         
-        <p>O Back-End é onde o código acontece de forma mais lógica e complexa, como por exemplo, onde os dados do usuário devem ser usados e armazenados. Resumidamente é a parte no qual o usuário não consegue interagir.</p>
-        <h3>Qual a diferença entre os dois?</h3>
+    <section class="card" >
+        <h3 id="pTabela">3 tipos de API</h3>
+        <table> 
+            <thead> 
+                <tr>
+                <th>Tipo</th> 
+                <th>Descrição</th> 
+                </tr>
+            </thead> 
+            <tbody> 
+                <tr>
+                <th class="tipoLista">Privadas</th>
+                <td>São utilizadas internamente entre as aplicações de uma empresa, ou seja, de forma local.</td>
+                </tr>
+                <tr>
+                    <th class="tipoLista">Parceiros</th>
+                    <td>Usadas entre parceiros de negócio ou para permitir a integração de diferentes softwares.</td>
+                </tr>
+                <tr>
+                    <th class="tipoLista">Públicas</th>
+                    <td>Podem ser utilizadas por empresa que os desenvolvedores possa fazer a integração entre diferentes softwares.</td>
+                </tr>
+            </tbody> 
+            </table>
 
-        <p>
-            A diferença fica muito clara só de saber o significado entre os dois termos, mas, sintetizando, a front é onde o usuário v~e e interage, e o back é onde a parte lógica do sistema acontece.
-        </p>
+    </section>
 
-        <h3>Qual a responsabilidade de cada um deles?</h3>
-
-        <p>
-            A responsabilidade do Front-End é apresentar uma interface gráfica no qual o usuário consiga interagir para concluir qual que seja o objetivo dele no sistema, portanto deve ser uma estrutura intuitiva e bem pensada, pois de nada adianta ter um front-end esteticamente lindo, mas que atrapalhe a utilização do usuário.
-            Por outro lado, o back-end se responsabiliza por assegurar que a comunicação entre o usuário e o sistema seja feita de forma lógica e que funcione.
-        </p>
-
-        <h3>Como eles se comunicam?</h3>
-        <p>	A integração entre o front e o back é feita através de uma API. Uma API (Application Programming Interface), é a ponte que permite que essas duas partes se comuniquem.
-        Em aplicações web, é usado o API REST que tem como base da comunicação o protocolo HTTP.
-        O cliente, utilizando o front-end, envia uma requisição através do protocolo HTTP  para o servidor (back-end), e essas ações podem ser: adicionar, ler, excluir ou atualizar dados. este tipo de arquitetura é chamada de cliente servidor.
-        Por exemplo quando o usuário interage clicando em um botão, o front envia uma requisição para o back-end, por sua vez o back-end processa essa requisição, realiza as operações necessárias, como consulta nos dados, e por fim, envia uma resposta para o front-end.
-    </p>
-
-    <p>Existem 3 tipos de API</p>
-    <table> 
-        <thead> 
-            <tr>
-            <th>Tipo</th> 
-            <th>Descrição</th> 
-            </tr>
-        </thead> 
-        <tbody> 
-            <tr>
-            <td>Privadas</td>
-            <td>São utilizadas internamente entre as aplicações de uma empresa, ou seja, de forma local.</td>
-            </tr>
-            <tr>
-                <td>Parceiros</td>
-                <td>Usadas entre parceiros de negócio ou para permitir a integração de diferentes softwares.</td>
-            </tr>
-            <tr>
-                <td>Públicas</td>
-                <td>Podem ser utilizadas por empresa que os desenvolvedores possa fazer a integração entre diferentes softwares.</td>
-            </tr>
-        </tbody> 
-        </table>
+    <section class="card">
 
         <h3>Onde o Back-End é executado</h3>
         <p>O código do back-end é executado em servidores físicos, ou seja, máquinas melhores que s0ão mantidas em locais próprios da empresa ou data centers.
         O código também pode ser executado em plataformas gerenciadas pela internet, como a AWS (Amazon Web Services), Google Cloud Plataform (GCP) e Microsoft Azure.
         Ademais, tecnologias como o Docker, que empacota o sistema para rodar de maneira isolada em qualquer servidor.
         </p>
+
+    </section>
+
     </main>
     <footer>
+        <p>Obrigada por ler até aqui :)</p>
+        <a href="https://github.com/analuhss">Veja mais projetos</a>
+        <a href="#topo">Volte até o topo</a>
     </footer>
 </body>
 </html>
