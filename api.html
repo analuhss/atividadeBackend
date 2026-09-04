@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>API s</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+      <header id="topo">
+        <h1>BACK-END</h1>
+        <P>Ana Luiza Santos Guimarães</P>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Front-end e Back-end</a></li>
+                <li><a href="./funcionamento.html">Funcionamento</a></li>
+                <li><a href="./api.html">API</a></li>
+                <li><a href="./fontes.html">Fontes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>APIs</h1>
+
+        <section class="card">
+            <h3>O que são APIs</h3>
+            <p>usando um conjunto de definições e protocolos. Por exemplo, o sistema de software do instituto meteorológico contém dados que são atualizados diariamente. A aplicação para a previsão do tempo fala no seu telefone por de APIs e mostra essas atualizações
+            </p>
+        </section>
+
+        <section class="card">
+
+            <h3>Para que serve uma API?</h3>
+            <p>Ela serve para garantir que um sistema com linguagem diferente possam se integrar de maneira ágil e segura.</p>
+
+        </section>
+        
+        <section class="card">
+
+            <h3>O que é uma API REST?</h3>
+
+            <p>Uma API REST é uma interface de programação de aplicativos (API) que segue os princípios de um design do estilo arquitetônico REST (transferência de estado representacional), utilizado para conectar sistemas hipermídia distribuídos. 
+            Em seu nível mais básico, uma API é um mecanismo que permite que uma aplicação ou um serviço que acessa os recursos é o cliente e a aplicação ou serviço que contém o recurso e o servidor.
+        </p>
+        </section>
+
+        <section class="card">
+
+            <h3>O que é um ENDPOINT?</h3>
+            <p>Um endpoint de uma  API é um local digital onde uma API faz solicitações para seu servidor. Os endpoints de APIs são componentes de APIs e , geralmente, estão na forma de URLs ou localizadores de recursos online.
+            Esses endpoints funcionam um pouco como os números de telefone: assim como um número de telefone para entrar em contato com uma determinada pessoa ou empresa, os clientes API (o software que faz uma chamada de API) fornecem URL de endpoint para acessar em um recurso específico. Uma URL endpoint fornece o local de um recurso em um servidor de API e ajuda a conectar o cliente de API ao recurso que está sendo solicitado. Basicamente, ele diz ao servidor: “o recurso que eu preciso está localizado aqui”.
+            </p>
+
+        </section>
+        
+
+        <section class="card">
+            <h3>Como o Front-End utiliza uma API</h3>
+            <p>Uma estrutura importante na na comunicação do frontend com uma API é um <span>API Gateway</span>. Ele é comum em sistemas distribuídos e microsserviços. No front-end, o API Gateway pode ser visto como um intermediário entre o cliente(front-end) e o backend (onde as APIs estão implementadas). A <span>função dessa estrutura é simplificar e centralizar a comunicação com várias APIs, proporcionando diversas funcionalidades</span>.
+
+            No front end, você raramente interage diretamente com uma API gateway. Em vez disso, você faz chamadas para URLs que o gateway expõe. O gateway processa essas requisições e as redireciona para os serviços apropriados no back-end, simplificando a lógica do cliente.
+
+            Outra tecnologia utilizada é o <span>Handler</span>, que é um termo genérico que se refere a uma função ou método <span>responsável por tratar ou gerenciar eventos ou requisições</span>. No contexto de consumo de API no front-end, um Handler geralmente se refere a funções que manipulam e processam a resposta da API. E eles podem ser divididos em dois tipos principais.
+            
+            <section class="card2">
+                <ul>
+                    <li> <span class="strong">Handler de requisição</span>: este é o código que dispara a requisição para a API. ele pode ser um fetch, axios ou outro método usado para enviar a requisição HTTP ao servidor . No handler de requisição, você pode configurar parâmetros de requisição, como cabeçalhos, método HTTP, parâmetros da URL, e dados no corpo da requisição.</li>
+                    <li>
+                       <span class="strong">Handler de resposta</span>: após a requisição ser enviada, um handler de resposta é responsável por processar  que acontece quando a resposta chega ao frontend. Ele lida com o sucesso ou falha da requisição.
+                    </li>
+                </ul>
+            </section>
+           
+        </section>
+    </main>
+    <footer>
+        <p>Obrigada por ler até aqui :)</p>
+        <a href="https://github.com/analuhss">Veja mais projetos</a>
+        <a href="#topo">Volte até o topo</a>
+    </footer>
+</body>
+</html>

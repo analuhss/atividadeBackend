@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-
+    <header id="topo">
+        <h1>BACK-END</h1>
+        <P>Ana Luiza Santos Guimarães</P>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Front-end e Back-end</a></li>
+                <li><a href="./funcionamento.html">Funcionamento</a></li>
+                <li><a href="./api.html">API</a></li>
+               <li><a href="./fontes.html">Fontes</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h1>FUNCIONAMENTO DO BACK-END</h1>
+        <h2>FUNCIONAMENTO DO BACK-END</h2>
     
         <section class="card">
             <h3>Cliente/Servidor</h3>
@@ -42,11 +51,12 @@
                 <p>Dependendo do método HTTP utilizado, a requisição também pode ter um corpo. O corpo de uma mensagem nos permite enviar dados para o servidor. quando usamos o método GET, por exemplo, a mensagem não necessita de um corpo, pois os dados já estão contidos na URL. Já no POST, dizemos que os dados preenchidos em um formulário são passados por um corpo da requisição.
                 </p>
             </section>
-            <section>
+            <section class="card2">
                 <h4>Resposta</h4>
 
                 <p>Uma resposta possui a seguinte estrutura: 
-                    <p>HTTP/1.1 200 OK Cache-Control: no-cache, must-revalidate Content-Type: text/html; charset=ISO-8859-1 …</p>
+                    <p><span>HTTP/1.1 200 OK Cache-Control: no-cache, must-revalidate Content-Type: text/html; charset=ISO-8859-1 …</span></p>
+                    <p>
                     A primeira informação que identificamos na linha 1 contém a versão do protocolo HTTP utilizado. Após isso,vemos o código de retorno e seu significado. 200 significa que a requisição foi recebida e processada pelo servidor com sucesso. 
                     Temos abaixo desta linha os headers da resposta, a exemplo Cache-Control e Content-Type. A resposta também pode conter um corpo com o recurso acessado no servidor.
                     </p>
@@ -58,10 +68,10 @@
             <p>O protocolo de transferência de hipertexto (HTTP) utiliza o modelo de comunicação cliente/servidor. Ele é um protocolo de aplixação no modelo de comunicação de rede Opens Systems Interconnection (OSI). Ele define vários tipos de solicitações e respostas.
             Da mesma forma que o servidor envia diferentes tipos de protocolo HTTP na forma de códigos numéricos e dados.
             </p>
-            <section>
-                200 - OK
-                400 - Solicitação inválida
-                404 - Recurso não encontrado
+            <section class="lista">
+                <div>200 - OK</div>
+                <div>400 - Solicitação inválida</div>
+                <div>404 - Recurso não encontrado</div>
             </section>
             <p>Essa comunicação de solicitação/resposta geralmente é invisível para os usuários. è um método de comunicação que o navegador e os servidores usam, então o WWW (World WIde Web) funciona de forma consistente para todo
                 No entanto, o protocolo HTTP não criptografa as informações que ele transmite, permitindo que as informações sejam lidas por terceiros. Este não era o processo ideal, então foi estendido para HTTPS, que combina as solicitações respostas com a tecnologia SSL e TLS
@@ -85,6 +95,10 @@
         </section>
     
     </main>
-    
+    <footer>
+        <p>Obrigada por ler até aqui :)</p>
+        <a href="https://github.com/analuhss">Veja mais projetos</a>
+        <a href="#topo">Volte até o topo</a>
+    </footer>
 </body>
 </html>

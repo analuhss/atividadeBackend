@@ -5,10 +5,15 @@ body {
     flex-direction: column;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     color: #DEDEFF;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: -3px;
+    text-align: center;
 }
 
 h2 {
@@ -43,6 +48,9 @@ header {
     width: 100%;
     top: 0;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 table {
@@ -87,7 +95,6 @@ header p {
 
 .card:hover{
     transform: scale(1.02);
-    font-width: 1px;
     border: solid #f3f56149;
 }
 .card:hover h3{
@@ -136,13 +143,10 @@ a:hover {
     color:  rgb(8, 14, 27);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .card2 {
     background-color: #dedeff0e;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .card2 h4 {
@@ -161,3 +165,79 @@ span {
     margin:2px
 }
 
+header a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    background-color: #1C2859;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: center;
+    color: #DEDEFF;
+}
+
+header a:hover {
+    color: #f3f561;
+}
+
+header ul {
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header li:hover {
+    scale: 1.05;
+}
+
+header li:hover {
+    transition: transform 0.2 ease;
+}
+
+.lista {
+    display: flex;
+    background-color: #dedeff31;
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+    color: #DEDEFF;
+    border-radius: 10px;
+}
+
+ol {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #DEDEFF;
+    background-color: #dedeff31;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+li::marker{
+    color: #f3f561;
+    width: 900px;
+}
+
+body ul {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #DEDEFF;
+}
+
+.strong {
+    font-weight: 900;
+}
+
+.card a {
+    color: #DEDEFF;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.card a:hover {
+    color: #f3f561;
+}
